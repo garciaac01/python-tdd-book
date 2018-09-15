@@ -6,7 +6,7 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):            
         cap = DesiredCapabilities().FIREFOX
         cap["marionette"] = False
-        browser = webdriver.Firefox(capabilities=cap)
+        self.browser = webdriver.Firefox(capabilities=cap)
     
 
     def tearDown(self):
